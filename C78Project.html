@@ -1,0 +1,55 @@
+
+<html>
+    <head>
+        <link rel = "stylesheet" href = "C78Project.css">
+
+        <title> Project C78 </title>
+        
+    </head>
+   
+    <body>
+
+<center>
+
+            <h1> My Family Book </h1>
+
+    <img id = "family_member_image" src = "https://cdn5.vectorstock.com/i/1000x1000/45/19/husband-makes-his-wife-present-cartoon-people-vector-13594519.jpg">;
+            
+    <h4 id="family_member_name"> Cute Family </h4>
+            
+    <button id="button1" onclick="update();"> Next </button>
+        
+</center>
+    <script>
+               
+var images = ["https://previews.123rf.com/images/unitonevector/unitonevector1904/unitonevector190401794/121210440-busy-man-at-workplace-flat-vector-illustration-office-worker-talking-on-phone-cartoon-character-secr.jpg",
+"https://w7.pngwing.com/pngs/236/1006/png-transparent-teacher-online-tutoring-english-as-a-second-or-foreign-language-teaching-english-class-public-relations-cartoon.png"];
+           
+var names = ["My Husband","Me"];
+          
+var i = 0;
+function update()
+{
+     i++;
+     var numbers_of_family_member_in_array = 1;
+     if(i > numbers_of_family_member_in_array )
+     {
+        i = 0;
+     }
+     var updatedImage = images[i];
+     var updatedName  = names[i];
+     document.getElementById("family_member_image").src = updatedImage;
+     document.getElementById("family_member_name").innerHTML = updatedName; 
+}
+
+
+
+     
+     
+
+
+</script>
+
+</body>
+
+</html>
